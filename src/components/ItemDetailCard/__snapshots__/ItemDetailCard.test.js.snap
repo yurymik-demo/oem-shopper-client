@@ -2,9 +2,52 @@
 
 exports[`renders without crashing 1`] = `
 <div>
-  <h2>
-    Item Detail for item 
-    title
-  </h2>
+  <div
+    class="row item-details-container"
+  >
+    <div
+      class="col"
+    >
+      <div
+        class="card blue-grey darken-1"
+      >
+        <div
+          class="card-content white-text"
+        >
+          <h2
+            class="card-title item-details-title"
+          >
+            title
+          </h2>
+          <h4>
+            item descriotion
+          </h4>
+          <h5>
+            Features:
+          </h5>
+          <p />
+          <h5>
+            Details:
+          </h5>
+          <p />
+        </div>
+        <div
+          class="card-action"
+        >
+          <button
+            class="btn-flat orange right"
+            href="#"
+          >
+            Add To Cart
+          </button>
+          <div
+            class="price right orange-text"
+          >
+            $123.00
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;

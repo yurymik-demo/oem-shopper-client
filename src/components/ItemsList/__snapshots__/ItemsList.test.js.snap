@@ -2,6 +2,10 @@
 
 exports[`renders without crashing 1`] = `
 <div
-  className="items-list-container"
-/>
+  className="progress"
+>
+  <div
+    className="indeterminate"
+  />
+</div>
 `;
