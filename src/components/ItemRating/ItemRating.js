@@ -1,7 +1,10 @@
 import React from "react";
-import _ from "lodash";
+import { Link } from "react-router-dom";
+import classnames from "classnames";
 
-const ItemRating = ({ rating, length = 5 }) => {
+import "./ItemRating.scss";
+
+const ItemRating = ({ rating, length = 5, className }) => {
   if (!rating) return null;
   const filledStars = rating;
   const emptyStars = length - rating;
@@ -14,14 +17,14 @@ const ItemRating = ({ rating, length = 5 }) => {
       count--;
     }
     return stars.map(key => (
-      <i key={key} className="material-icons">
-        {iconName}
-      </i>
+      <Link key={key} to="#" className="rating-star-link">
+        <i className="material-icons tiny">{iconName}</i>
+      </Link>
     ));
   };
 
   return (
-    <div>
+    <div className={classnames("item-rating-container", className)}>
       {renderStars(filledStars, true)}
       {renderStars(emptyStars, false)}
     </div>

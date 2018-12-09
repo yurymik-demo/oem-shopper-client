@@ -31,37 +31,53 @@ exports[`renders without crashing 1`] = `
         <div
           class="card-action"
         >
-          <a
-            href="/"
-          >
-            <div>
+          <div>
+            <a
+              href="/"
+            >
               <i
                 class="material-icons"
               >
                 star
               </i>
+            </a>
+            <a
+              href="/"
+            >
               <i
                 class="material-icons"
               >
                 star
               </i>
+            </a>
+            <a
+              href="/"
+            >
               <i
                 class="material-icons"
               >
                 star
               </i>
+            </a>
+            <a
+              href="/"
+            >
               <i
                 class="material-icons"
               >
                 star_border
               </i>
+            </a>
+            <a
+              href="/"
+            >
               <i
                 class="material-icons"
               >
                 star_border
               </i>
-            </div>
-          </a>
+            </a>
+          </div>
           <a
             class="right"
             href="/items/undefined"

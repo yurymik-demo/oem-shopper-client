@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ItemRating from "../ItemRating/ItemRating";
 
+import "./ItemCard.scss";
+
 const ItemCard = props => {
   const { id, title, description, price, rating = 3 } = props.item;
 
@@ -15,9 +17,7 @@ const ItemCard = props => {
             <p>{description}</p>
           </div>
           <div className="card-action">
-            <Link to="#">
-              <ItemRating rating={rating} />
-            </Link>
+            <ItemRating className="left" rating={rating} />
             <Link className="right" to={`/items/${id}`}>
               View Details
             </Link>
