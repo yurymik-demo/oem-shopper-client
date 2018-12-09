@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import ItemCard from "../ItemCard/ItemCard";
 import { getItems } from "../../actions/items";
+import ProgressIndicator from "../ProgressIndicator/ProgressIndicator";
 
 export class ItemsList extends React.Component {
   componentDidMount() {
@@ -9,7 +10,10 @@ export class ItemsList extends React.Component {
   }
 
   render() {
-    const { items = [] } = this.props;
+    const { items } = this.props;
+    if (!items) return <ProgressIndicator />;
+    if (!items.length) return <h3>No Items Found ¯\_(ツ)_/¯</h3>;
+
     return (
       <div className="items-list-container">
         {items.map(item => (

@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-import ItemCard from "./ItemCard";
+import ItemDetailCard from "./ItemDetailCard";
 
 it("renders without crashing", () => {
   const mockItem = {
@@ -12,7 +12,7 @@ it("renders without crashing", () => {
   const div = document.createElement("div");
   ReactDOM.render(
     <BrowserRouter>
-      <ItemCard item={mockItem} />
+      <ItemDetailCard item={mockItem} />
     </BrowserRouter>,
     div
   );
