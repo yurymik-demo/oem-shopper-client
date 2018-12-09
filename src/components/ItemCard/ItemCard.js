@@ -1,19 +1,26 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import ItemRating from "../ItemRating/ItemRating";
 
 const ItemCard = props => {
-  const { title, description, price } = props.item;
+  const { id, title, description, price, rating = 3 } = props.item;
 
   return (
     <div className="row item-card">
       <div className="col s12 m12">
-        <div className="card blue-grey darken-1">
-          <div className="card-content white-text">
+        <div className="card white ">
+          <div className="card-content ">
             <span className="card-title">{title}</span>
+            <div className="right">{price}</div>
             <p>{description}</p>
           </div>
           <div className="card-action">
-            <a href="#">Ratings</a>
-            <div className="right white-text">{price}</div>
+            <Link to="#">
+              <ItemRating rating={rating} />
+            </Link>
+            <Link className="right" to={`/items/${id}`}>
+              View Details
+            </Link>
           </div>
         </div>
       </div>

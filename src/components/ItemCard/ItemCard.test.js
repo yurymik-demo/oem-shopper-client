@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
 import ItemCard from "./ItemCard";
 
 it("renders without crashing", () => {
@@ -9,7 +10,12 @@ it("renders without crashing", () => {
     price: "$123.00"
   };
   const div = document.createElement("div");
-  ReactDOM.render(<ItemCard item={mockItem} />, div);
+  ReactDOM.render(
+    <BrowserRouter>
+      <ItemCard item={mockItem} />
+    </BrowserRouter>,
+    div
+  );
   expect(div).toMatchSnapshot();
   ReactDOM.unmountComponentAtNode(div);
 });

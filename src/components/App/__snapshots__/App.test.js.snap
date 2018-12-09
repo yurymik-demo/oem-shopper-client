@@ -2,7 +2,9 @@
 
 exports[`renders without crashing 1`] = `
 <div>
-  <div>
+  <div
+    class="grey lighten-5"
+  >
     <header
       class="header-container"
     >
@@ -36,7 +38,7 @@ exports[`renders without crashing 1`] = `
       </nav>
     </header>
     <div
-      class="container"
+      class="container "
     >
       home_route_component
     </div>

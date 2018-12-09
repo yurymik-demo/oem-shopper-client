@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 2 out of 5 stars solid crashing 1`] = `
+<div>
+  <div>
+    <i
+      class="material-icons"
+    >
+      star
+    </i>
+    <i
+      class="material-icons"
+    >
+      star
+    </i>
+    <i
+      class="material-icons"
+    >
+      star_border
+    </i>
+    <i
+      class="material-icons"
+    >
+      star_border
+    </i>
+    <i
+      class="material-icons"
+    >
+      star_border
+    </i>
+  </div>
+</div>
+`;
+
+exports[`renders 2 out of 10 stars solid crashing 1`] = `
+<div>
+  <div>
+    <i
+      class="material-icons"
+    >
+      star
+    </i>
+    <i
+      class="material-icons"
+    >
+      star
+    </i>
+    <i
+      class="material-icons"
+    >
+      star_border
+    </i>
+    <i
+      class="material-icons"
+    >
+      star_border
+    </i>
+    <i
+      class="material-icons"
+    >
+      star_border
+    </i>
+    <i
+      class="material-icons"
+    >
+      star_border
+    </i>
+    <i
+      class="material-icons"
+    >
+      star_border
+    </i>
+    <i
+      class="material-icons"
+    >
+      star_border
+    </i>
+    <i
+      class="material-icons"
+    >
+      star_border
+    </i>
+    <i
+      class="material-icons"
+    >
+      star_border
+    </i>
+  </div>
+</div>
+`;
+
+exports[`renders without crashing 1`] = `<div />`;

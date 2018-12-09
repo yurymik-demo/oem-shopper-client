@@ -8,9 +8,9 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div>
+        <div className="grey lighten-5">
           <Header />
-          <div className="container">
+          <div className="container ">
             <Route exact path="/">
               <HomeRoute />
             </Route>
