@@ -1,5 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { createStore, applyMiddleware } from "redux";
+import { Provider } from "react-redux";
+import reduxThunk from "redux-thunk";
+
+import reducers from "./reducers";
 import App from "./components/App/App";
 
 // import from an installed module rather than CDN
@@ -7,4 +12,11 @@ import App from "./components/App/App";
 // rather than have a blocking CSS download on the client side
 import "materialize-css/dist/css/materialize.min.css";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+const store = createStore(reducers, {}, applyMiddleware(reduxThunk));
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById("root")
+);

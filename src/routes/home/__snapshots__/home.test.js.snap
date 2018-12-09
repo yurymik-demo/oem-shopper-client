@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<div>
+  <h1>
+    Best Deals
+  </h1>
+  <ItemsListComponent />
+</div>
+`;

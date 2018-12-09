@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<div>
+  <div
+    class="row item-card"
+  >
+    <div
+      class="col s12 m12"
+    >
+      <div
+        class="card blue-grey darken-1"
+      >
+        <div
+          class="card-content white-text"
+        >
+          <span
+            class="card-title"
+          >
+            title
+          </span>
+          <p>
+            item descriotion
+          </p>
+        </div>
+        <div
+          class="card-action"
+        >
+          <a
+            href="#"
+          >
+            Ratings
+          </a>
+          <div
+            class="right white-text"
+          >
+            $123.00
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
