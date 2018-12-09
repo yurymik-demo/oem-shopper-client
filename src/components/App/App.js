@@ -3,6 +3,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import HomeRoute from "../../routes/home/home";
+import ItemDetailView from "../../routes/itemDetailView/itemDetailView";
 
 class App extends Component {
   render() {
@@ -11,9 +12,8 @@ class App extends Component {
         <div className="grey lighten-5">
           <Header />
           <div className="container ">
-            <Route exact path="/">
-              <HomeRoute />
-            </Route>
+            <Route exact path="/" component={HomeRoute} />
+            <Route exact path="/items/:id" component={ItemDetailView} />
           </div>
           <Footer />
         </div>
