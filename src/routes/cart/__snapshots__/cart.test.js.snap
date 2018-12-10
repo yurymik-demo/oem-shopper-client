@@ -29,7 +29,7 @@ exports[`renders without crashing 1`] = `
       href="/"
       onClick={[Function]}
     >
-      Continue Chopping
+      Continue Shopping
     </a>
   </div>
 </div>

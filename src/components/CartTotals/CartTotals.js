@@ -13,14 +13,25 @@ const CartTotals = ({ cartTotals }) => {
     );
   };
 
+  const formatCurrencyDisplay = (numValue = 0) => {
+    // For now, hardcoded to USD format, later this can be refactored into a config
+    return numValue.toLocaleString("en-us", {
+      style: "currency",
+      currency: "USD"
+    });
+  };
+
   const { itemsCount, subtotal = 0, tax = 0, grandTotal = 0 } = cartTotals;
   return (
     <div className="cart-totals-container">
       <div className="right col s12">
         {renderTotalLineItem("Items Count:", itemsCount)}
-        {renderTotalLineItem("Purchase Subtotal:", `$${subtotal}`)}
-        {renderTotalLineItem("Tax:", `$${tax}`)}
-        {renderTotalLineItem("TOTAL:", `$${grandTotal}`)}
+        {renderTotalLineItem(
+          "Purchase Subtotal:",
+          `${formatCurrencyDisplay(subtotal)}`
+        )}
+        {renderTotalLineItem("Tax:", `${formatCurrencyDisplay(tax)}`)}
+        {renderTotalLineItem("TOTAL:", `${formatCurrencyDisplay(grandTotal)}`)}
       </div>
     </div>
   );

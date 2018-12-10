@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import ProgressIndicator from "../../components/ProgressIndicator/ProgressIndicator";
 import { getUserCart } from "../../actions/cart";
+import ScrollToTopOnMount from "../../components/ ScrollToTopOnMount/ScrollToTopOnMount";
 import CartItemCard from "../../components/CartItemCard/CartItemCard";
 import CartTotals from "../../components/CartTotals/CartTotals";
 
@@ -34,6 +35,7 @@ export class Cart extends React.Component {
     const canCheckout = items && items.length > 0;
     return (
       <div className="cart-container">
+        <ScrollToTopOnMount />
         <h1>Your Cart</h1>
         {this.renderCartItems(items)}
         <div className="row">
@@ -50,7 +52,7 @@ export class Cart extends React.Component {
             </Link>
           )}
           <Link to="/" className="action-button btn-flat orange right">
-            Continue Chopping
+            Continue Shopping
           </Link>
         </div>
       </div>
