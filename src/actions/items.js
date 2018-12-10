@@ -22,11 +22,11 @@ const generateMockItem = (id, title, description, price, rating) => {
   };
 };
 const _MOCK_ITEMS = [
-  generateMockItem("1", "item 1", "description item 1", "15", 1),
-  generateMockItem("2", "item 2", "description item 2", "25", 2),
-  generateMockItem("3", "item 3", "description item 3", "35", 3),
-  generateMockItem("4", "item 4", "description item 4", "45", 4),
-  generateMockItem("5", "item 5", "description item 5", "55", 5)
+  generateMockItem("1", "Cannon Camera", "The Best Camera", "15", 1),
+  generateMockItem("2", "Oakley Sunglasses", "The Best Sunglasses", "25", 2),
+  generateMockItem("3", "Thule Backpack", "The Best Backpack", "35", 3),
+  generateMockItem("4", "Dyson Fan", "The Best Fan", "45", 4),
+  generateMockItem("5", "Bose Headphones", "The Best Headphones", "55", 5)
 ];
 
 export const getItems = () => dispatch => {

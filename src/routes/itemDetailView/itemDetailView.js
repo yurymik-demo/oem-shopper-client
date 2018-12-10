@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import ItemDetailCard from "../../components/ItemDetailCard/ItemDetailCard";
 import { getItemDetails, clearItemSelection } from "../../actions/items";
+import ScrollToTopOnMount from "../../components/ ScrollToTopOnMount/ScrollToTopOnMount";
 
 export class ItemDetailView extends React.Component {
   componentDidMount() {
@@ -16,6 +17,7 @@ export class ItemDetailView extends React.Component {
     const { item } = this.props;
     return (
       <div>
+        <ScrollToTopOnMount />
         <h1>Item Details: </h1>
         <ItemDetailCard item={item} />
       </div>

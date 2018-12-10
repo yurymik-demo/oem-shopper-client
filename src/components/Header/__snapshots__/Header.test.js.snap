@@ -10,7 +10,7 @@ exports[`renders without crashing 1`] = `
         class="nav-wrapper teal row"
       >
         <a
-          class="brand-logo pl-1 col s3"
+          class="brand-logo pl-1 col s6 m3 left"
           href="/"
         >
           <i
@@ -21,7 +21,7 @@ exports[`renders without crashing 1`] = `
           OEM Store
         </a>
         <div
-          class="col s9 right"
+          class="col s6 m9 right"
         >
           <ul
             id="nav-mobile"

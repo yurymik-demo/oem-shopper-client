@@ -18,11 +18,11 @@ export class Header extends React.Component {
       <header className="header-container">
         <nav>
           <div className="nav-wrapper teal row">
-            <Link to="/" className="brand-logo pl-1 col s3">
+            <Link to="/" className="brand-logo pl-1 col s6 m3 left">
               <i className="material-icons">shopping_basket</i>
               OEM Store
             </Link>
-            <div className="col s9 right">
+            <div className="col s6 m9 right">
               <ul id="nav-mobile">
                 <li className="left">
                   <Link to="/">All Items</Link>
