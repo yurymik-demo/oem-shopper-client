@@ -7,6 +7,7 @@ jest.mock("../../components/ItemsList/ItemsList", () => "ItemsListComponent");
 
 it("renders without crashing", () => {
   const getUserCartMock = jest.fn(() => {});
+  global.scrollTo = jest.fn(() => {});
   const wrapper = renderer
     .create(
       <BrowserRouter>

@@ -7,8 +7,8 @@ const CartTotals = ({ cartTotals }) => {
   const renderTotalLineItem = (label, value) => {
     return (
       <p className="total-line row">
-        <span className="col s2 m1 number right">{value}</span>
-        <span className="col s10 m3 right">{label}</span>
+        <span className="col s3 m1 number right">{value}</span>
+        <span className="col s9 m3 right">{label}</span>
       </p>
     );
   };

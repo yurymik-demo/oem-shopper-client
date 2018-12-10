@@ -1,5 +1,12 @@
 .item-card {
-  .card-action {
-    min-height: 50px;
+  .card {
+    .card-action {
+      min-height: 50px;
+
+      // Need to override materialize css, and trying not to have to use !important
+      a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating).link.view-details-action {
+        margin-right: 0;
+      }
+    }
   }
 }

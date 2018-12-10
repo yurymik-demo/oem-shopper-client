@@ -2,48 +2,55 @@
 
 exports[`renders 2 out of 5 stars solid crashing 1`] = `
 <div>
-  <div>
+  <div
+    class="item-rating-container"
+  >
     <a
+      class="rating-star-link"
       href="/"
     >
       <i
-        class="material-icons"
+        class="material-icons tiny"
       >
         star
       </i>
     </a>
     <a
+      class="rating-star-link"
       href="/"
     >
       <i
-        class="material-icons"
+        class="material-icons tiny"
       >
         star
       </i>
     </a>
     <a
+      class="rating-star-link"
       href="/"
     >
       <i
-        class="material-icons"
+        class="material-icons tiny"
       >
         star_border
       </i>
     </a>
     <a
+      class="rating-star-link"
       href="/"
     >
       <i
-        class="material-icons"
+        class="material-icons tiny"
       >
         star_border
       </i>
     </a>
     <a
+      class="rating-star-link"
       href="/"
     >
       <i
-        class="material-icons"
+        class="material-icons tiny"
       >
         star_border
       </i>
@@ -54,93 +61,105 @@ exports[`renders 2 out of 5 stars solid crashing 1`] = `
 
 exports[`renders 2 out of 10 stars solid crashing 1`] = `
 <div>
-  <div>
+  <div
+    class="item-rating-container"
+  >
     <a
+      class="rating-star-link"
       href="/"
     >
       <i
-        class="material-icons"
+        class="material-icons tiny"
       >
         star
       </i>
     </a>
     <a
+      class="rating-star-link"
       href="/"
     >
       <i
-        class="material-icons"
+        class="material-icons tiny"
       >
         star
       </i>
     </a>
     <a
+      class="rating-star-link"
       href="/"
     >
       <i
-        class="material-icons"
+        class="material-icons tiny"
       >
         star_border
       </i>
     </a>
     <a
+      class="rating-star-link"
       href="/"
     >
       <i
-        class="material-icons"
+        class="material-icons tiny"
       >
         star_border
       </i>
     </a>
     <a
+      class="rating-star-link"
       href="/"
     >
       <i
-        class="material-icons"
+        class="material-icons tiny"
       >
         star_border
       </i>
     </a>
     <a
+      class="rating-star-link"
       href="/"
     >
       <i
-        class="material-icons"
+        class="material-icons tiny"
       >
         star_border
       </i>
     </a>
     <a
+      class="rating-star-link"
       href="/"
     >
       <i
-        class="material-icons"
+        class="material-icons tiny"
       >
         star_border
       </i>
     </a>
     <a
+      class="rating-star-link"
       href="/"
     >
       <i
-        class="material-icons"
+        class="material-icons tiny"
       >
         star_border
       </i>
     </a>
     <a
+      class="rating-star-link"
       href="/"
     >
       <i
-        class="material-icons"
+        class="material-icons tiny"
       >
         star_border
       </i>
     </a>
     <a
+      class="rating-star-link"
       href="/"
     >
       <i
-        class="material-icons"
+        class="material-icons tiny"
       >
         star_border
       </i>

@@ -18,7 +18,10 @@ const ItemCard = props => {
           </div>
           <div className="card-action">
             <ItemRating className="left" rating={rating} />
-            <Link className="right" to={`/items/${id}`}>
+            <Link
+              className="right link view-details-action"
+              to={`/items/${id}`}
+            >
               View Details
             </Link>
           </div>
