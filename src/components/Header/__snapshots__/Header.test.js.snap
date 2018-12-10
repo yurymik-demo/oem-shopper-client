@@ -7,30 +7,58 @@ exports[`renders without crashing 1`] = `
   >
     <nav>
       <div
-        class="nav-wrapper teal"
+        class="nav-wrapper teal row"
       >
         <a
-          class="brand-logo pl-1"
+          class="brand-logo pl-1 col s3"
           href="/"
         >
+          <i
+            class="material-icons"
+          >
+            shopping_basket
+          </i>
           OEM Store
         </a>
-        <ul
-          class="right"
-          id="nav-mobile"
+        <div
+          class="col s9 right"
         >
-          <li>
-            <a
-              href="/cart"
+          <ul
+            id="nav-mobile"
+          >
+            <li
+              class="left"
             >
-              <i
-                class="material-icons"
+              <a
+                href="/"
               >
-                shopping_cart
-              </i>
-            </a>
-          </li>
-        </ul>
+                All Items
+              </a>
+            </li>
+            <li
+              class="right"
+            >
+              <a
+                href="/cart"
+              >
+                <i
+                  class="material-icons left shopping-cart-icon"
+                >
+                  shopping_cart
+                </i>
+              </a>
+            </li>
+            <li
+              class="right"
+            >
+              <a
+                href="/login"
+              >
+                Login with Google
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>

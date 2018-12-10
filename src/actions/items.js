@@ -1,4 +1,8 @@
-import { GET_ITEMS, GET_ITEM_DETAILS } from "./types.const";
+import {
+  GET_ITEMS,
+  GET_ITEM_DETAILS,
+  CLEAR_SELECTED_ITEM
+} from "./types.const";
 
 const _MOCK_ITEM_FEATURES =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod finibus luctus. Mauris iaculis dolor eget ante tempor, at elementum justo molestie. Quisque sit amet mattis dolor, non mollis lacus. Proin vulputate, velit vitae hendrerit euismod, lacus diam fermentum neque, ut tempus est odio a diam. Donec id enim ac tellus auctor ultrices. Nullam viverra dui diam, blandit tempus libero mattis vitae. Sed sit amet tincidunt sem, sed pharetra massa. Praesent pharetra, augue id euismod suscipit, velit odio pulvinar nibh, vitae interdum diam purus eu felis. Donec gravida leo quis risus vehicula, quis sollicitudin velit facilisis.";
@@ -31,5 +35,11 @@ export const getItems = () => dispatch => {
 
 export const getItemDetails = id => dispatch => {
   const item = _MOCK_ITEMS.find(item => item.id === id);
-  setTimeout(() => dispatch({ type: GET_ITEM_DETAILS, item }), 3000);
+
+  // adding timeout to simulate the api call and to demonstrate "waiting" experience
+  setTimeout(() => dispatch({ type: GET_ITEM_DETAILS, item }), 1000);
+};
+
+export const clearItemSelection = () => dispatch => {
+  dispatch({ type: CLEAR_SELECTED_ITEM });
 };

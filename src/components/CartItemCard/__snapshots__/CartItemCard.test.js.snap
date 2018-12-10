@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<div>
+  <div
+    class="row cart-item-card"
+  >
+    <div
+      class="col s12 m12"
+    >
+      <div
+        class="card white "
+      >
+        <div
+          class="card-content "
+        >
+          <span
+            class="card-title"
+          >
+            title
+          </span>
+          <div
+            class="right"
+          >
+            $123.00
+          </div>
+          <p>
+            item descriotion
+          </p>
+          <div
+            class="right"
+          >
+            QTY: 
+            3
+          </div>
+        </div>
+        <div
+          class="card-action"
+        >
+          <div
+            class="item-rating-container left"
+          >
+            <a
+              class="rating-star-link"
+              href="/"
+            >
+              <i
+                class="material-icons tiny"
+              >
+                star
+              </i>
+            </a>
+            <a
+              class="rating-star-link"
+              href="/"
+            >
+              <i
+                class="material-icons tiny"
+              >
+                star
+              </i>
+            </a>
+            <a
+              class="rating-star-link"
+              href="/"
+            >
+              <i
+                class="material-icons tiny"
+              >
+                star
+              </i>
+            </a>
+            <a
+              class="rating-star-link"
+              href="/"
+            >
+              <i
+                class="material-icons tiny"
+              >
+                star
+              </i>
+            </a>
+            <a
+              class="rating-star-link"
+              href="/"
+            >
+              <i
+                class="material-icons tiny"
+              >
+                star_border
+              </i>
+            </a>
+          </div>
+          <button
+            class="waves-effect waves-light btn btn-small red right"
+          >
+            X
+          </button>
+          <button
+            class="waves-effect waves-light btn btn-small orange right"
+          >
+            Update
+          </button>
+          <a
+            class="right"
+            href="/items/undefined"
+          >
+            View Details
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

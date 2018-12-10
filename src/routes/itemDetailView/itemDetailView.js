@@ -1,11 +1,15 @@
 import React from "react";
 import { connect } from "react-redux";
 import ItemDetailCard from "../../components/ItemDetailCard/ItemDetailCard";
-import { getItemDetails } from "../../actions/items";
+import { getItemDetails, clearItemSelection } from "../../actions/items";
 
 export class ItemDetailView extends React.Component {
   componentDidMount() {
     this.props.getItemDetails(this.props.itemId);
+  }
+
+  componentWillUnmount() {
+    this.props.clearItemSelection();
   }
 
   render() {
@@ -26,5 +30,5 @@ const mapStateToProps = (state, props) => ({
 
 export default connect(
   mapStateToProps,
-  { getItemDetails }
+  { getItemDetails, clearItemSelection }
 )(ItemDetailView);

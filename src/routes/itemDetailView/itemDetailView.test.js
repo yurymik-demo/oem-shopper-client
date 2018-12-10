@@ -3,6 +3,10 @@ import renderer from "react-test-renderer";
 import { ItemDetailView } from "./itemDetailView";
 
 jest.mock("../../components/ItemsList/ItemsList", () => "ItemsListComponent");
+jest.mock(
+  "../../components/ItemDetailCard/ItemDetailCard",
+  () => "ItemDetailCard"
+);
 
 it("renders without crashing", () => {
   const getItemDetailsMock = jest.fn(() => {});
