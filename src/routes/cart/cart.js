@@ -10,7 +10,6 @@ import "./cart.scss";
 export class Cart extends React.Component {
   componentDidMount() {
     this.props.getUserCart();
-    console.log("cart mount: ", 1);
   }
 
   renderNoItemsView = () => {

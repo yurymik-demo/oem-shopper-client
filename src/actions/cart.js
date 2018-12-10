@@ -20,7 +20,6 @@ const calculateCartTotals = cartItems => {
     (sum, cartItem) => sum + cartItem.quantity,
     0
   );
-  console.log(itemsCount);
 
   return {
     itemsCount
@@ -62,4 +61,13 @@ export const addToCart = (item, quantity = 1) => dispatch => {
 export const updateCartTotals = () => dispatch => {
   _MOCK_USER_CART.totals = calculateCartTotals(_MOCK_USER_CART.cartItems);
   dispatch({ type: UPDATE_CART_TOTALS, totals: _MOCK_USER_CART.totals });
+};
+
+export const removeItemFromCart = itemId => dispatch => {
+  const newItemsCollection = _MOCK_USER_CART.cartItems.filter(
+    item => item.id !== itemId
+  );
+  _MOCK_USER_CART.cartItems = newItemsCollection;
+  dispatch({ type: GET_USER_CART, data: _MOCK_USER_CART });
+  updateCartTotals();
 };

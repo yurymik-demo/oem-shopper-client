@@ -2,10 +2,14 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import ItemRating from "../../components/ItemRating/ItemRating";
+import { removeItemFromCart } from "../../actions/cart";
 
 import "./CartItemCard.scss";
 
 export class CartItemCard extends React.Component {
+  onRemoveClick = () => {
+    this.props.removeItemFromCart(this.props.cartItem.id);
+  };
   render() {
     const { item, quantity } = this.props.cartItem;
     return (
@@ -20,7 +24,10 @@ export class CartItemCard extends React.Component {
             </div>
             <div className="card-action">
               <ItemRating className="left" rating={item.rating} />
-              <button className="waves-effect waves-light btn btn-small red right">
+              <button
+                className="waves-effect waves-light btn btn-small red right"
+                onClick={this.onRemoveClick}
+              >
                 X
               </button>
               <button className="waves-effect waves-light btn btn-small orange right">
@@ -37,4 +44,7 @@ export class CartItemCard extends React.Component {
   }
 }
 
-export default connect()(CartItemCard);
+export default connect(
+  null,
+  { removeItemFromCart }
+)(CartItemCard);
