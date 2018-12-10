@@ -74,7 +74,6 @@ export const removeItemFromCart = itemId => dispatch => {
     item => item.id !== itemId
   );
   _MOCK_USER_CART.cartItems = newItemsCollection;
-  _MOCK_USER_CART.totals = calculateCartTotals(_MOCK_USER_CART.cartItems);
   dispatch({ type: GET_USER_CART, data: _MOCK_USER_CART });
   dispatch(updateCartTotals());
 };
