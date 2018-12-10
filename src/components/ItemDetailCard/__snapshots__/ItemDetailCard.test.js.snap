@@ -42,7 +42,8 @@ exports[`renders without crashing 1`] = `
           <div
             class="price right orange-text"
           >
-            $123.00
+            $
+            123.00
           </div>
         </div>
       </div>

@@ -13,7 +13,7 @@ const ItemCard = props => {
         <div className="card white ">
           <div className="card-content ">
             <span className="card-title">{title}</span>
-            <div className="right">{price}</div>
+            <div className="right">${price}</div>
             <p>{description}</p>
           </div>
           <div className="card-action">

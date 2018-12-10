@@ -18,7 +18,7 @@ export class CartItemCard extends React.Component {
           <div className="card white ">
             <div className="card-content ">
               <span className="card-title">{item.title}</span>
-              <div className="right">{item.price}</div>
+              <div className="right">${item.price}</div>
               <p>{item.description}</p>
               <div className="right">QTY: {quantity}</div>
             </div>

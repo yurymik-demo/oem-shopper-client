@@ -8,7 +8,7 @@ it("renders without crashing", () => {
     item: {
       title: "title",
       description: "item descriotion",
-      price: "$123.00",
+      price: "123.00",
       rating: 4
     },
     quantity: 3

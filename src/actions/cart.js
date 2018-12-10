@@ -1,4 +1,3 @@
-import { reduce } from "lodash";
 import {
   GET_USER_CART,
   CART_ADD_ITEM,
@@ -15,14 +14,21 @@ const _MOCK_USER_CART = {
 };
 
 const calculateCartTotals = cartItems => {
-  const itemsCount = reduce(
-    cartItems || [],
-    (sum, cartItem) => sum + cartItem.quantity,
-    0
-  );
+  let itemsCount = 0;
+  let subtotal = 0;
+  cartItems.forEach(cartItem => {
+    const qty = parseInt(cartItem.quantity);
+    itemsCount += qty;
+    subtotal += parseInt(cartItem.item.price) * qty;
+  });
+
+  const tax = subtotal * 0.1;
 
   return {
-    itemsCount
+    itemsCount,
+    subtotal,
+    tax,
+    grandTotal: subtotal + tax // shipping is free :)
   };
 };
 

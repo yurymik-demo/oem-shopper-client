@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import ProgressIndicator from "../../components/ProgressIndicator/ProgressIndicator";
 import { getUserCart } from "../../actions/cart";
 import CartItemCard from "../../components/CartItemCard/CartItemCard";
+import CartTotals from "../../components/CartTotals/CartTotals";
 
 import "./cart.scss";
 
@@ -29,12 +30,16 @@ export class Cart extends React.Component {
   };
 
   render() {
-    const { cartItems: items } = this.props.userCart || {};
+    const { cartItems: items, totals: cartTotals } = this.props.userCart || {};
     const canCheckout = items && items.length > 0;
     return (
       <div className="cart-container">
         <h1>Your Cart</h1>
         {this.renderCartItems(items)}
+        <div className="row">
+          <hr className="col s12" />
+          <CartTotals cartTotals={cartTotals} />
+        </div>
         <div className="row">
           {canCheckout && (
             <Link

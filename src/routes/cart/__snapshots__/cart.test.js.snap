@@ -17,6 +17,13 @@ exports[`renders without crashing 1`] = `
   <div
     className="row"
   >
+    <hr
+      className="col s12"
+    />
+  </div>
+  <div
+    className="row"
+  >
     <a
       className="action-button btn-flat orange right"
       href="/"

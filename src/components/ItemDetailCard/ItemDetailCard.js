@@ -48,7 +48,7 @@ export class ItemDetailCard extends React.Component {
               >
                 Add To Cart
               </button>
-              <div className="price right orange-text">{price}</div>
+              <div className="price right orange-text">${price}</div>
             </div>
           </div>
         </div>

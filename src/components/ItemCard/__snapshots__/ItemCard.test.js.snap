@@ -22,7 +22,8 @@ exports[`renders without crashing 1`] = `
           <div
             class="right"
           >
-            $123.00
+            $
+            123.00
           </div>
           <p>
             item descriotion
@@ -31,48 +32,55 @@ exports[`renders without crashing 1`] = `
         <div
           class="card-action"
         >
-          <div>
+          <div
+            class="item-rating-container left"
+          >
             <a
+              class="rating-star-link"
               href="/"
             >
               <i
-                class="material-icons"
+                class="material-icons tiny"
               >
                 star
               </i>
             </a>
             <a
+              class="rating-star-link"
               href="/"
             >
               <i
-                class="material-icons"
+                class="material-icons tiny"
               >
                 star
               </i>
             </a>
             <a
+              class="rating-star-link"
               href="/"
             >
               <i
-                class="material-icons"
+                class="material-icons tiny"
               >
                 star
               </i>
             </a>
             <a
+              class="rating-star-link"
               href="/"
             >
               <i
-                class="material-icons"
+                class="material-icons tiny"
               >
                 star_border
               </i>
             </a>
             <a
+              class="rating-star-link"
               href="/"
             >
               <i
-                class="material-icons"
+                class="material-icons tiny"
               >
                 star_border
               </i>
