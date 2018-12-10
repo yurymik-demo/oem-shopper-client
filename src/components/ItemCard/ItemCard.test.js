@@ -7,7 +7,7 @@ it("renders without crashing", () => {
   const mockItem = {
     title: "title",
     description: "item descriotion",
-    price: "$123.00"
+    price: "123.00"
   };
   const div = document.createElement("div");
   ReactDOM.render(

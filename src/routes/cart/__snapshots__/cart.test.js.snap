@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<div
+  className="cart-container"
+>
+  <h1>
+    Your Cart
+  </h1>
+  <div
+    className="progress"
+  >
+    <div
+      className="indeterminate"
+    />
+  </div>
+  <div
+    className="row"
+  >
+    <hr
+      className="col s12"
+    />
+  </div>
+  <div
+    className="row"
+  >
+    <a
+      className="action-button btn-flat orange right"
+      href="/"
+      onClick={[Function]}
+    >
+      Continue Chopping
+    </a>
+  </div>
+</div>
+`;

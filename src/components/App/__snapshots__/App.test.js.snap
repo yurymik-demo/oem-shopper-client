@@ -5,40 +5,9 @@ exports[`renders without crashing 1`] = `
   <div
     class="grey lighten-5"
   >
-    <header
-      class="header-container"
-    >
-      <nav>
-        <div
-          class="nav-wrapper teal"
-        >
-          <a
-            class="brand-logo pl-1"
-            href="/"
-          >
-            OEM Store
-          </a>
-          <ul
-            class="right"
-            id="nav-mobile"
-          >
-            <li>
-              <a
-                href="/cart"
-              >
-                <i
-                  class="material-icons"
-                >
-                  shopping_cart
-                </i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    &lt;Header /&gt;
     <div
-      class="container "
+      class="container app-container"
     >
       home_route_component
     </div>

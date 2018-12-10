@@ -35,15 +35,15 @@ exports[`renders without crashing 1`] = `
           class="card-action"
         >
           <button
-            class="btn-flat orange right"
-            href="#"
+            class="aves-effect waves-light btn btn-small orange right"
           >
             Add To Cart
           </button>
           <div
             class="price right orange-text"
           >
-            $123.00
+            $
+            123.00
           </div>
         </div>
       </div>

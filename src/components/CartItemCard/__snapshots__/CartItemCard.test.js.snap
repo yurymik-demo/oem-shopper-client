@@ -3,7 +3,7 @@
 exports[`renders without crashing 1`] = `
 <div>
   <div
-    class="row item-card"
+    class="row cart-item-card"
   >
     <div
       class="col s12 m12"
@@ -28,6 +28,12 @@ exports[`renders without crashing 1`] = `
           <p>
             item descriotion
           </p>
+          <div
+            class="right"
+          >
+            QTY: 
+            3
+          </div>
         </div>
         <div
           class="card-action"
@@ -72,7 +78,7 @@ exports[`renders without crashing 1`] = `
               <i
                 class="material-icons tiny"
               >
-                star_border
+                star
               </i>
             </a>
             <a
@@ -86,6 +92,16 @@ exports[`renders without crashing 1`] = `
               </i>
             </a>
           </div>
+          <button
+            class="waves-effect waves-light btn btn-small red right"
+          >
+            X
+          </button>
+          <button
+            class="waves-effect waves-light btn btn-small orange right"
+          >
+            Update
+          </button>
           <a
             class="right"
             href="/items/undefined"

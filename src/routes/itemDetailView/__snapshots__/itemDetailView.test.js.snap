@@ -5,12 +5,6 @@ exports[`renders without crashing 1`] = `
   <h1>
     Item Details: 
   </h1>
-  <div
-    className="progress"
-  >
-    <div
-      className="indeterminate"
-    />
-  </div>
+  <ItemDetailCard />
 </div>
 `;
