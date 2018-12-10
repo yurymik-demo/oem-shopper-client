@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { Link } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import ItemRating from "../../components/ItemRating/ItemRating";
 import { removeItemFromCart } from "../../actions/cart";
 
@@ -10,6 +10,11 @@ export class CartItemCard extends React.Component {
   onRemoveClick = () => {
     this.props.removeItemFromCart(this.props.cartItem.id);
   };
+
+  onTitleClick = () => {
+    this.props.history.push(`/items/${this.props.cartItem.id}`);
+  };
+
   render() {
     const { item, quantity } = this.props.cartItem;
     return (
@@ -17,9 +22,11 @@ export class CartItemCard extends React.Component {
         <div className="col s12 m12">
           <div className="card white ">
             <div className="card-content ">
-              <span className="card-title">{item.title}</span>
-              <div className="right">${item.price}</div>
-              <p>{item.description}</p>
+              <div onClick={this.onTitleClick}>
+                <div className="card-title">{item.title}</div>
+                <div className="right">${item.price}</div>
+                <p>{item.description}</p>
+              </div>
               <div className="right">QTY: {quantity}</div>
             </div>
             <div className="card-action">
@@ -33,9 +40,6 @@ export class CartItemCard extends React.Component {
               <button className="waves-effect waves-light btn btn-small orange right">
                 Update
               </button>
-              <Link className="right" to={`/items/${item.id}`}>
-                View Details
-              </Link>
             </div>
           </div>
         </div>
@@ -47,4 +51,4 @@ export class CartItemCard extends React.Component {
 export default connect(
   null,
   { removeItemFromCart }
-)(CartItemCard);
+)(withRouter(CartItemCard));

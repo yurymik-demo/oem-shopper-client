@@ -87,7 +87,7 @@ exports[`renders without crashing 1`] = `
             </a>
           </div>
           <a
-            class="right"
+            class="right link view-details-action"
             href="/items/undefined"
           >
             View Details

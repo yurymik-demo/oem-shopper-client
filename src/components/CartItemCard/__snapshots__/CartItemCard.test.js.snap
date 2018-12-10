@@ -14,20 +14,22 @@ exports[`renders without crashing 1`] = `
         <div
           class="card-content "
         >
-          <span
-            class="card-title"
-          >
-            title
-          </span>
-          <div
-            class="right"
-          >
-            $
-            123.00
+          <div>
+            <div
+              class="card-title"
+            >
+              title
+            </div>
+            <div
+              class="right"
+            >
+              $
+              123.00
+            </div>
+            <p>
+              item descriotion
+            </p>
           </div>
-          <p>
-            item descriotion
-          </p>
           <div
             class="right"
           >
@@ -102,12 +104,6 @@ exports[`renders without crashing 1`] = `
           >
             Update
           </button>
-          <a
-            class="right"
-            href="/items/undefined"
-          >
-            View Details
-          </a>
         </div>
       </div>
     </div>

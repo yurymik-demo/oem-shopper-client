@@ -5,6 +5,10 @@
     .price {
       margin: 0 10px;
       font-size: x-large;
+
+      @media screen and (max-width: 600px) {
+        font-size: large;
+      }
     }
   }
 }
